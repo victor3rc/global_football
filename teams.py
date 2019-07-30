@@ -19,62 +19,74 @@ Players = namedtuple('Players', 'other_country other_confederation total')
 
 # South America - CONMENBOL
 ARGENTINA = {1930: Players(0, 0, 23), 1934: Players(0, 0, 18), 1958: Players(0, 0, 22),
-             1962: Players(0, 0, 22)}
-CHILE = {1930: Players(0, 0, 19), 1950: Players(1, 1, 22), 1962: Players(0, 0, 22)}
+             1962: Players(0, 0, 22), 1966: Players(0, 0, 22)}
+CHILE = {1930: Players(0, 0, 19), 1950: Players(1, 1, 22), 1962: Players(0, 0, 22),
+         1966: Players(0, 0, 22)}
 BRAZIL = {1930: Players(0, 0, 22), 1934: Players(2, 0, 19), 1938: Players(0, 0, 22),
           1950: Players(0, 0, 22), 1954: Players(0, 0, 22), 1958: Players(0, 0, 22),
-          1962: Players(0, 0, 22)}
+          1962: Players(0, 0, 22), 1966: Players(0, 0, 22), 1970: Players(0, 0, 22)}
 BOLIVIA = {1930: Players(0, 0, 17), 1950: Players(0, 0, 22)}
 URUGUAY = {1930: Players(0, 0, 22), 1950: Players(0, 0, 22), 1954: Players(0, 0, 22),
-           1962: Players(0, 0, 22)}
-PERU = {1930: Players(0, 0, 20)}
+           1962: Players(0, 0, 22), 1966: Players(0, 0, 22), 1970: Players(0, 0, 22)}
+PERU = {1930: Players(0, 0, 20), 1970: Players(0, 0, 22)}
 PARAGUAY = {1930: Players(0, 0, 22), 1950: Players(0, 0, 22), 1958: Players(0, 0, 22)}
 COLOMBIA = {1962: Players(0, 0, 22)}
 
 # Central and North America - CONCACAF
 MEXICO = {1930: Players(0, 0, 17), 1950: Players(0, 0, 22), 1954: Players(0, 0, 22),
-          1958: Players(0, 0, 22), 1962: Players(0, 0, 22)}
+          1958: Players(0, 0, 22), 1962: Players(0, 0, 22), 1966: Players(0, 0, 22),
+          1970: Players(0, 0, 22)}
 USA = {1930: Players(0, 0, 16), 1934: Players(0, 0, 19), 1950: Players(0, 0, 19)}
 CUBA = {1938: Players(0, 0, 22)}
+EL_SALVADOR = {1970: Players(0, 0, 22)}
 
 # Europe - UEFA
 FRANCE = {1930: Players(0, 0, 16), 1934: Players(0, 0, 22), 1938: Players(0, 0, 22),
-          1954: Players(0, 0, 22), 1958: Players(1, 0, 22)}
+          1954: Players(0, 0, 22), 1958: Players(1, 0, 22), 1966: Players(2, 0, 22)}
 YUGOSLAVIA = {1930: Players(3, 0, 17), 1950: Players(0, 0, 22), 1954: Players(0, 0, 22),
               1958: Players(0, 0, 22), 1962: Players(0, 0, 22)}
-ROMANIA = {1930: Players(0, 0, 15), 1934: Players(0, 0, 22), 1938: Players(0, 0, 22)}
+ROMANIA = {1930: Players(0, 0, 15), 1934: Players(0, 0, 22), 1938: Players(0, 0, 22),
+           1970: Players(0, 0, 22)}
 BELGIUM = {1930: Players(0, 0, 16), 1934: Players(0, 0, 22), 1938: Players(0, 0, 22),
-           1954: Players(0, 0, 22)}
+           1954: Players(0, 0, 22), 1970: Players(0, 0, 22)}
 AUSTRIA = {1934: Players(0, 0, 22), 1954: Players(0, 0, 22), 1958: Players(0, 0, 22)}
 CZECHOSLOVAKIA = {1934: Players(1, 0, 22), 1938: Players(0, 0, 22), 1954: Players(0, 0, 22),
-                  1958: Players(0, 0, 22), 1962: Players(0, 0, 22)}
+                  1958: Players(0, 0, 22), 1962: Players(0, 0, 22), 1970: Players(1, 0, 22)}
 GERMANY = {1934: Players(0, 0, 22), 1938: Players(0, 0, 22), 1954: Players(0, 0, 22),
-           1958: Players(0, 0, 22), 1962: Players(1, 0, 22)}
+           1958: Players(0, 0, 22), 1962: Players(1, 0, 22), 1966: Players(3, 0, 22),
+           1970: Players(2, 0, 22)}
 HUNGARY = {1934: Players(0, 0, 22), 1938: Players(1, 0, 22), 1954: Players(0, 0, 22),
-           1958: Players(0, 0, 22), 1962: Players(0, 0, 22)}
+           1958: Players(0, 0, 22), 1962: Players(0, 0, 22), 1966: Players(0, 0, 22)}
 ITALY = {1934: Players(0, 0, 22), 1938: Players(0, 0, 22), 1950: Players(0, 0, 22),
-         1954: Players(0, 0, 22), 1962: Players(0, 0, 22)}
-SPAIN = {1934: Players(0, 0, 22), 1950: Players(0, 0, 22), 1962: Players(0, 0, 22)}
+         1954: Players(0, 0, 22), 1962: Players(0, 0, 22), 1966: Players(0, 0, 22),
+         1970: Players(0, 0, 22)}
+SPAIN = {1934: Players(0, 0, 22), 1950: Players(0, 0, 22), 1962: Players(0, 0, 22),
+         1966: Players(3, 0, 22)}
 SWEDEN = {1934: Players(0, 0, 22), 1938: Players(0, 0, 22), 1950: Players(0, 0, 22),
-          1958: Players(5, 0, 22)}
+          1958: Players(5, 0, 22), 1970: Players(6, 0, 22)}
 SWITZERLAND = {1934: Players(0, 0, 22), 1938: Players(2, 0, 22), 1950: Players(0, 0, 22),
-               1954: Players(0, 0, 22), 1962: Players(3, 0, 22)}
+               1954: Players(0, 0, 22), 1962: Players(3, 0, 22), 1966: Players(0, 0, 22)}
 POLAND = {1938: Players(0, 0, 22)}
 NORWAY = {1938: Players(0, 0, 22)}
 NETHERLANDS = {1938: Players(0, 0, 22)}
 ENGLAND = {1950: Players(0, 0, 22), 1954: Players(0, 0, 22), 1958: Players(0, 0, 22),
-           1962: Players(1, 0, 22)}
+           1962: Players(1, 0, 22), 1966: Players(0, 0, 22), 1970: Players(0, 0, 22)}
 TURKEY = {1954: Players(0, 0, 22)}
 SCOTLAND = {1954: Players(7, 0, 22), 1958: Players(6, 0, 22)}
 NORTHERN_IRELAND = {1958: Players(19, 0, 22)}
 WALES = {1958: Players(13, 0, 22)}
-SOVIET_UNION = {1958: Players(0, 0, 22), 1962: Players(0, 0, 22)}
-BULGARIA = {1962: Players(0, 0, 22)}
+SOVIET_UNION = {1958: Players(0, 0, 22), 1962: Players(0, 0, 22), 1966: Players(0, 0, 22),
+                1970: Players(0, 0, 22)}
+BULGARIA = {1962: Players(0, 0, 22), 1966: Players(0, 0, 22), 1970: Players(0, 0, 22)}
+PORTUGAL = {1966: Players(0, 0, 22)}
+ISRAEL = {1970: Players(0, 0, 22)}
 
 # Africa -
 EGYPT = {1934: Players(0, 0, 20)}
+MOROCCO = {1970: Players(0, 0, 19)}
 
 # Asia -
 DUTCH_EAST_INDIES = {1938: Players(0, 0, 17)}
 SOUTH_KOREA = {1954: Players(0, 0, 20)}
+NORTH_KOREA = {1966: Players(0, 0, 22)}
 
